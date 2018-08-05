@@ -11,10 +11,13 @@ permalink: /blog/
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
       <div class="entry">
-        {{ post.excerpt }}
+        {% if post.image %}
+          <img src="{{ site.baseurl }}/{{ post.image }}"  style="width: 350px; display: block; margin: 0 auto 5px auto" />
+        {% endif %}
+        {{ post.content | strip_html | truncatewords: 75 }}
       </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read This Article</a>
     </article>
   {% endfor %}
 </div>

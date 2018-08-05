@@ -7,7 +7,17 @@
 
 @import "reset";
 @import "variables";
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
 // Syntax highlighting @import is at the bottom of this file
+
+//
+// Variables
+//
+$headerFont: 'Amatic SC', 'Helvetica Neue', sans-serif, cursive;
+$textFont: 'Merriweather', serif;
+$textGray: #757575;
+$textBlue: #03a9f4;
 
 /**************/
 /* BASE RULES */
@@ -19,8 +29,9 @@ html {
 
 body {
 	background: $white;
-  font: 18px/1.4 $helvetica;
-  color: $darkGray;
+  font: normal 16px/25px $textFont;
+  color: $textGray;
+  text-align: center;
 }
 
 .container {
@@ -31,7 +42,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
+  font-family: $headerFont;
   color: $darkerGray;
   font-weight: bold;
 
@@ -69,7 +80,7 @@ p {
 }
 
 a {
-  color: $blue;
+  color: $textBlue;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
@@ -194,10 +205,11 @@ img {
   margin: 0;
   color: $darkGray;
   cursor: pointer;
-  font-family: $helveticaNeue;
-  font-weight: 300;
-  font-size: 28px;
+  font-family: $headerFont;
+  font-weight: 600;
+  font-size: 32px;
   letter-spacing: 1px;
+  text-align: left;
 }
 
 .site-description {
@@ -213,8 +225,8 @@ img {
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
-  font-size: 18px;
+  font-family: $headerFont;
+  font-size: 28px;
 
   @include mobile {
     float: none;
@@ -267,7 +279,12 @@ nav {
 
   .read-more {
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 1.4em;
+    font-family: $headerFont;
+    color: $textBlue;
+  }
+  .entry {
+    text-align: left;
   }
 }
 
