@@ -1,13 +1,13 @@
 ---
 layout: page
 ---
+[<img src="{{ site.baseurl }}/images/bigsmile.jpg" alt="Mattie Kenny Big Smile" style="width: 250px; display: block; margin: 0 auto 5px auto"/>]({{ site.baseurl }}/)
+JavaScript Software Engineer with a focus in frontend technologies (React, Vue, jQuery, Redux). I have a passion for data driven development and don't mind evangelizing it wherever I go. In my spare time, I enjoy helping kids build the robot apocalypse.
 
-Some information about you!
+## Projects
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+Coming Soon!
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[hi@matsie.net](mailto:hi@matsie.net)
