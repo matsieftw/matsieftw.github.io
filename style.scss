@@ -210,6 +210,10 @@ img {
   font-size: 32px;
   letter-spacing: 1px;
   text-align: left;
+
+  @include mobile {
+    text-align: center;
+  }
 }
 
 .site-description {
@@ -232,7 +236,7 @@ nav {
     float: none;
     margin-top: 9px;
     display: block;
-    font-size: 16px;
+    font-size: 1.7em;
   }
 
   a {
